@@ -6,7 +6,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
 //跨域拦截器
-public class AppFilterConfig implements WebMvcConfigurer {
+public class CrosInterceptorConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")  // 拦截所有的请求
